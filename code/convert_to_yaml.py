@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df_rh = pd.read_csv('using_phone/data/2grt.csv')
+df_rh = pd.read_csv('./test_dataset/using_phone/data/grt.csv')
 
 import yaml
 
@@ -56,6 +56,6 @@ for i in tracklets:
         tracklets2[i]['frames'][fr] = coords_
 
 
-tracking_output_file = 'using_phone/data/2grt.yaml'
+tracking_output_file = './test_dataset/using_phone/data/grt.yaml'
 with open(tracking_output_file, 'w') as of:
   yaml.safe_dump(tracklets2, of, indent=4, default_flow_style=None, sort_keys=False)

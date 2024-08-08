@@ -101,7 +101,7 @@ def edit_score(pred, gt, norm):
     sequence_pred = []
     sequence_gt = []
     for frame_pred_id in range(pred['start'], pred['end']+1, 1):
-        # print(type(sequence_pred))
+
         sequence_pred.append(frame_pred_id)
         sequence_preds = np.asarray(sequence_pred)
 
